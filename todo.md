@@ -1,0 +1,15 @@
+- [ ] Webserver
+    - [ ] EC2 with nginx installed
+        - [ ] ubuntu
+        - [ ] nginx
+- [ ] RDS
+  - [ ] postgres
+- [ ] storage (s3)
+- [ ] load balancer
+- [ ] networking
+  - [ ] vpc
+    - [ ] nacl
+  - [ ] sercurity group
+  - [ ] route table configuration
+  - [ ] internet gateway configuration.
+- [ ] output

@@ -21,3 +21,18 @@ variable "vpc_cidr_block" {
   type        = string
   description = "cidr block for your vpc"
 }
+
+variable "aws_s3_backend_bucketname" {
+  type        = string
+  description = "backend for your s3 backend to store tf state"
+}
+
+variable "aws_backend_dynamodb_table_name" {
+  type        = string
+  description = "backend for your dynamodb table to store tf state"
+}
+
+variable "aws_s3_backend_key_name" {
+  type        = string
+  description = "s3 key path to store tf state"
+}

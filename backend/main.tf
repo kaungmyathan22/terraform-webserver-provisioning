@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket        = var.aws_s3_backend_bucketname
   force_destroy = true

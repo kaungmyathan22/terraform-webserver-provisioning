@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = var.aws_s3_backend_bucketname
-    key            = var.aws_s3_backend_key_name
-    region         = var.region
-    dynamodb_table = var.aws_backend_dynamodb_table_name
+    bucket         = "km-terraform-ecommerce-backend"
+    key            = "ecommerce-backend/terraform.tfstate"
+    region         = "ap-southeast-1"
+    dynamodb_table = "km-ecommerce-terraform-state-locking"
     encrypt        = true
   }
 }
